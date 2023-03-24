@@ -25,7 +25,7 @@ function Navbar() {
         </Flex>
       </Flex>
       <Flex alignItems="center">
-        <Flex fontSize="5xl">
+        <Flex w="250px" h="80px">
           <Image p="6" src="image/logo-desktop.svg" />
         </Flex>
 
