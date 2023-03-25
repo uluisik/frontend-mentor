@@ -9,32 +9,32 @@ function Section() {
         alignItems="space-between"
         justifyContent="space-between"
       >
-        <Flex
-          flexDirection="column"
-          w="900px"
-          h="400px"
-          border="1px solid black"
-        >
-          <Heading p="8" border="1px solid red" as="h1" size="4xl">
+        <Flex flexDirection="column" w="760px" h="500px" ml="20">
+          <Heading
+            mt="8"
+            mb="12"
+            as="h1"
+            fontSize="56px"
+            w="680px"
+            color="blue.700"
+          >
             Improve your front-end coding skills by building real projects
           </Heading>
-          <Text p="8" fontSize="xl" border="1px solid blue">
+          <Text fontWeight="medium" mb="10" fontSize="24px">
             Solve real-world HTML, CSS and JavaScript challenges whilst working
             to professional designs. Join 585.585 developers building projects,
             reviewing code, and helping each other get better.
           </Text>
           <Flex
-            h="50px"
-            w="220px"
+            h="54px"
+            w="280px"
             borderRadius="3xl"
-            mr="6"
-            ml="4"
             as="em"
             fontWeight="bold"
             alignItems="center"
             justifyContent="center
             "
-            bg="black"
+            bg="red.600"
             color="white"
             cursor="pointer"
           >
@@ -45,7 +45,7 @@ function Section() {
           </Flex>
         </Flex>
         <Flex>
-          <Image src="image/homepage-hero.jpg" />
+          <Image ml="20" mr="24" src="image/homepage-hero.jpg" />
         </Flex>
       </Flex>
     </>
