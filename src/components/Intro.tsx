@@ -1,23 +1,12 @@
 import { Flex, Heading, Image, Text } from "@chakra-ui/react";
 import { AiFillGithub } from "react-icons/ai";
 
-function Section() {
+function Intro() {
   return (
     <>
-      <Flex
-        mt="120px"
-        alignItems="space-between"
-        justifyContent="space-between"
-      >
+      <Flex mt="120px">
         <Flex flexDirection="column" w="760px" h="500px" ml="20">
-          <Heading
-            mt="8"
-            mb="12"
-            as="h1"
-            fontSize="56px"
-            w="680px"
-            color="blue.700"
-          >
+          <Heading mt="8" mb="12" as="h1" fontSize="56px" color="blue.700">
             Improve your front-end coding skills by building real projects
           </Heading>
           <Text fontWeight="medium" mb="10" fontSize="24px">
@@ -32,9 +21,8 @@ function Section() {
             as="em"
             fontWeight="bold"
             alignItems="center"
-            justifyContent="center
-            "
-            bg="red.600"
+            justifyContent="center"
+            backgroundColor="rgb(237, 44, 73)"
             color="white"
             cursor="pointer"
           >
@@ -52,4 +40,4 @@ function Section() {
   );
 }
 
-export default Section;
+export default Intro;

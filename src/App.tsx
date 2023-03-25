@@ -3,13 +3,13 @@ import Article from "./components/Article";
 import Aside from "./components/Aside";
 import Header from "./components/Header";
 import Main from "./components/Main";
-import Section from "./components/Section";
+import Intro from "./components/Intro";
 
 export const App = () => (
   <ChakraProvider theme={theme}>
     <>
       <Header />
-      <Section />
+      <Intro />
       <Main />
       <Aside />
       <Article />
