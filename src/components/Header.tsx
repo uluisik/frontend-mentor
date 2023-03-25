@@ -1,63 +1,39 @@
 import { Divider, Flex, Text, Image, Spacer } from "@chakra-ui/react";
 import { BsBagFill } from "react-icons/bs";
 import { AiFillGithub } from "react-icons/ai";
+import HeaderItemCard from "./HeaderItemCard";
+
+const HEADER_ITEMS = ["CHALLENGES", "SOLUTIONS", "RESOURCES"];
 function Navbar() {
   return (
     <>
       <Flex alignItems="center" justifyContent="center" bg="blue.600" h="60px">
-        <Flex>
-          <Text fontSize="2xl" mr="4" color="white">
-            <BsBagFill />
-          </Text>
-          <Text fontSize="lg" fontWeight="bold" mr="2" color="white">
-            Looking to hire developers?
-          </Text>
-          <Flex
-            _hover={{ borderBottom: "none" }}
-            cursor="pointer"
-            fontSize="lg"
-            fontWeight="bold"
-            color="white"
-            borderBottom="1px solid"
-          >
-            Visit our Hiring Platform
-          </Flex>
+        <Text fontSize="2xl" mr="4" color="white">
+          <BsBagFill />
+        </Text>
+        <Text fontSize="lg" fontWeight="bold" mr="2" color="white">
+          Looking to hire developers?
+        </Text>
+        <Flex
+          _hover={{ borderBottom: "none" }}
+          cursor="pointer"
+          fontSize="lg"
+          fontWeight="bold"
+          color="white"
+          borderBottom="1px solid"
+        >
+          Visit our Hiring Platform
         </Flex>
       </Flex>
-      <Flex alignItems="center">
-        <Flex w="250px" h="80px">
-          <Image p="6" src="image/logo-desktop.svg" />
-        </Flex>
 
+      <Flex alignItems="center">
+        <Image w="250px" h="80px" p="6" src="image/logo-desktop.svg" />
         <Spacer />
         <Flex h="80px" alignItems="center" justifyContent="center">
-          <Text
-            _hover={{ borderBottom: "3px solid red" }}
-            ml="4"
-            as="em"
-            fontWeight="bold"
-            cursor="pointer"
-          >
-            CHALLENGES
-          </Text>
-          <Text
-            ml="4"
-            as="em"
-            fontWeight="bold"
-            _hover={{ borderBottom: "3px solid red" }}
-            cursor="pointer"
-          >
-            SOLUTIONS
-          </Text>
-          <Text
-            ml="4"
-            as="em"
-            fontWeight="bold"
-            _hover={{ borderBottom: "3px solid red" }}
-            cursor="pointer"
-          >
-            RESOURCES
-          </Text>
+          {HEADER_ITEMS.map((item) => (
+            <HeaderItemCard text={item} />
+          ))}
+
           <Flex
             ml="4"
             cursor="pointer"
@@ -90,8 +66,7 @@ function Navbar() {
             as="em"
             fontWeight="bold"
             alignItems="center"
-            justifyContent="center
-            "
+            justifyContent="center"
             bg="black"
             color="white"
             cursor="pointer"
