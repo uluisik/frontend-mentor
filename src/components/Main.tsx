@@ -10,7 +10,30 @@ import {
 import { AiFillWechat } from "react-icons/ai";
 import { FaLaptopCode, FaSlack } from "react-icons/fa";
 import { FiDownload, FiShare2 } from "react-icons/fi";
+import MainItemCard from "./MainItemCard";
 
+const MAIN_ITEMS = [
+  {
+    icons: FiDownload,
+    heading: "Choose your challenge",
+    text: "Have a look through our collection of web designs. Pick one that you feel will be a nice challenge for you at this stage.",
+  },
+  {
+    icons: FaLaptopCode,
+    heading: "Code the design",
+    text: "Start the challenge and download all the starter files. We provide all the files you’ll need to complete the challenge. Building it is up to you!",
+  },
+  {
+    icons: FiShare2,
+    heading: "Submit your solution",
+    text: "Post your solution on the platform for everyone to see and get feedback on your code from other developers in the community.",
+  },
+  {
+    icons: AiFillWechat,
+    heading: "Give others feedback",
+    text: "Thinking critically about other people’s code is a crucial skill. Help others while deepening your own knowledge by giving feedback on solutions.",
+  },
+];
 function Main() {
   return (
     <>
@@ -25,80 +48,14 @@ function Main() {
           HOW IT WORKS
         </Heading>
         <Flex gap="50px">
-          <Box
-            flexDirection="column"
-            display="flex"
-            alignItems="center"
-            w="316px"
-            h="220px"
-          >
-            <Text color="blue.700" fontSize="5xl" mb="6">
-              <FiDownload />
-            </Text>
-            <Heading mb="3" fontWeight="semibold" fontSize="2xl">
-              Choose your challenge
-            </Heading>
-            <Text fontSize="lg">
-              Have a look through our collection of web designs. Pick one that
-              you feel will be a nice challenge for you at this stage.
-            </Text>
-          </Box>
-          <Box
-            flexDirection="column"
-            display="flex"
-            alignItems="center"
-            w="316px"
-            h="220px"
-          >
-            <Text color="blue.700" fontSize="5xl" mb="6">
-              <FaLaptopCode />
-            </Text>
-            <Heading mb="3" fontWeight="semibold" fontSize="2xl">
-              Code the design
-            </Heading>
-            <Text fontSize="lg">
-              Start the challenge and download all the starter files. We provide
-              all the files you’ll need to complete the challenge. Building it
-              is up to you!
-            </Text>
-          </Box>
-          <Box
-            flexDirection="column"
-            display="flex"
-            alignItems="center"
-            w="316px"
-            h="220px"
-          >
-            <Text color="blue.700" fontSize="5xl" mb="6">
-              <FiShare2 />
-            </Text>
-            <Heading mb="3" fontWeight="semibold" fontSize="2xl">
-              Submit your solution
-            </Heading>
-            <Text fontSize="lg">
-              Post your solution on the platform for everyone to see and get
-              feedback on your code from other developers in the community.
-            </Text>
-          </Box>
-          <Box
-            flexDirection="column"
-            display="flex"
-            alignItems="center"
-            w="316px"
-            h="220px"
-          >
-            <Text color="blue.700" fontSize="5xl" mb="6">
-              <AiFillWechat />
-            </Text>
-            <Heading mb="3" fontWeight="semibold" fontSize="2xl">
-              Give others feedback
-            </Heading>
-            <Text fontSize="lg">
-              Thinking critically about other people’s code is a crucial skill.
-              Help others while deepening your own knowledge by giving feedback
-              on solutions.
-            </Text>
-          </Box>
+          {MAIN_ITEMS.map((item) => (
+            <MainItemCard
+              key={item.text}
+              Icon={item.icons}
+              heading={item.heading}
+              text={item.text}
+            />
+          ))}
         </Flex>
       </Flex>
       <Flex

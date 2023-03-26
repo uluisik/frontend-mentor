@@ -31,7 +31,7 @@ function Navbar() {
         <Spacer />
         <Flex h="80px" alignItems="center" justifyContent="center">
           {HEADER_ITEMS.map((item) => (
-            <HeaderItemCard text={item} />
+            <HeaderItemCard key={item} text={item} />
           ))}
 
           <Flex
