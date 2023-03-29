@@ -1,4 +1,4 @@
-import { Divider, Flex, Text, Image, Spacer } from "@chakra-ui/react";
+import { Divider, Flex, Text, Image, Spacer, Link } from "@chakra-ui/react";
 import { BsBagFill } from "react-icons/bs";
 import { AiFillGithub } from "react-icons/ai";
 import HeaderItemCard from "./HeaderItemCard";
@@ -71,7 +71,10 @@ function Navbar() {
             color="white"
             cursor="pointer"
           >
-            LOG IN WITH GITHUB
+            <Link href="https://github.com/" target="_blank" border="none">
+              LOG IN WITH GITHUB
+            </Link>
+
             <Text ml="2" fontSize="2xl">
               <AiFillGithub />
             </Text>

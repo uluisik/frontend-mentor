@@ -1,4 +1,4 @@
-import { Flex, Text, Image, Spacer } from "@chakra-ui/react";
+import { Flex, Text, Image, Spacer, Link } from "@chakra-ui/react";
 import { AiFillLinkedin, AiOutlineTwitter } from "react-icons/ai";
 import { FaFacebook } from "react-icons/fa";
 
@@ -19,7 +19,9 @@ function Aside() {
           fontSize="36"
           color="blue.300"
         >
-          <AiOutlineTwitter />
+          <Link href="https://twitter.com/login?lang=tr" target="_blank">
+            <AiOutlineTwitter />
+          </Link>
         </Text>
         <Text
           ml="8"
@@ -29,7 +31,9 @@ function Aside() {
           fontSize="36"
           color="blue.300"
         >
-          <AiFillLinkedin />
+          <Link href="https://tr.linkedin.com/" target="_blank">
+            <AiFillLinkedin />
+          </Link>
         </Text>
         <Text
           ml="8"
@@ -40,7 +44,9 @@ function Aside() {
           fontSize="36"
           color="blue.300"
         >
-          <FaFacebook />
+          <Link href="https://tr-tr.facebook.com/" target="_blank">
+            <FaFacebook />
+          </Link>
         </Text>
       </Flex>
     </Flex>

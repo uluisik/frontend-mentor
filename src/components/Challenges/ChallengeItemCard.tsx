@@ -43,7 +43,13 @@ function ChallengeItemCard({
       borderRadius="10"
       position="relative"
     >
-      <Image cursor="pointer" mb="6" src={image} />
+      <Image
+        _hover={{ WebkitTransform: "scale(1.1)" }}
+        cursor="pointer"
+        mb="6"
+        src={image}
+        borderRadius="10"
+      />
       <Flex position="relative" flexDirection="column" mb="6" ml="8 ">
         <Heading
           cursor="pointer"

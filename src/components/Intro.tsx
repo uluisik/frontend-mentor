@@ -1,4 +1,4 @@
-import { Flex, Heading, Image, Text } from "@chakra-ui/react";
+import { Flex, Heading, Image, Link, Text } from "@chakra-ui/react";
 import { AiFillGithub } from "react-icons/ai";
 
 function Intro() {
@@ -33,7 +33,9 @@ function Intro() {
             color="white"
             cursor="pointer"
           >
-            LOG IN WITH GITHUB
+            <Link href="https://github.com/" target="_blank" border="none">
+              LOG IN WITH GITHUB
+            </Link>
             <Text ml="2" fontSize="2xl">
               <AiFillGithub />
             </Text>
