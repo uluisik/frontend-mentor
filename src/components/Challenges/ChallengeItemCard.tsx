@@ -6,6 +6,7 @@ type BoxProps = {
   techs: string[];
   level: number;
   description: string;
+  price: string;
 };
 
 const LEVELS = ["NEWBIE", "JUNIOR", "INTERMEDIATE", "ADVANCED"];
@@ -30,6 +31,7 @@ function ChallengeItemCard({
   techs,
   level,
   description,
+  price,
 }: BoxProps) {
   return (
     <Flex
@@ -39,6 +41,7 @@ function ChallengeItemCard({
       w="416px"
       h="580px"
       borderRadius="10"
+      position="relative"
     >
       <Image cursor="pointer" mb="6" src={image} />
       <Flex position="relative" flexDirection="column" mb="6" ml="8 ">
@@ -100,17 +103,18 @@ function ChallengeItemCard({
       </Flex>
       <Flex
         borderRadius="20"
-        bg="blue.700"
+        bg={price === "FREE" ? "white" : "blue.700"}
         position="absolute"
-        top="1545px"
-        left="393px"
-        color="white"
+        top="3"
+        right="3"
+        color={price === "FREE" ? "blue.700" : "white"}
         p="1"
         fontSize="lg"
         fontWeight="semibold"
         mr="1"
+        px="2"
       >
-        PREMIUM
+        {price}
       </Flex>
     </Flex>
   );
