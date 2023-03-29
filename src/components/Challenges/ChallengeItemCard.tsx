@@ -40,9 +40,16 @@ function ChallengeItemCard({
       h="580px"
       borderRadius="10"
     >
-      <Image mb="6" src={image} />
-      <Flex flexDirection="column" mb="6" ml="8 ">
-        <Heading fontSize="2xl">{title}</Heading>
+      <Image cursor="pointer" mb="6" src={image} />
+      <Flex position="relative" flexDirection="column" mb="6" ml="8 ">
+        <Heading
+          cursor="pointer"
+          _hover={{ borderBottom: "3px solid" }}
+          fontSize="2xl"
+          w="-webkit-max-content"
+        >
+          {title}
+        </Heading>
         <Flex my="6">
           {techs.map((item, index) => (
             <Text
@@ -90,6 +97,20 @@ function ChallengeItemCard({
         <Text color="gray" fontSize="18px">
           {description}
         </Text>
+      </Flex>
+      <Flex
+        borderRadius="20"
+        bg="blue.700"
+        position="absolute"
+        top="1545px"
+        left="393px"
+        color="white"
+        p="1"
+        fontSize="lg"
+        fontWeight="semibold"
+        mr="1"
+      >
+        PREMIUM
       </Flex>
     </Flex>
   );

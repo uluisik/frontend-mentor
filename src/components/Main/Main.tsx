@@ -61,6 +61,7 @@ function Main() {
           fontSize="18px"
           borderBottom="3px solid red"
           mb="40"
+          cursor="pointer"
         >
           View all challenges
         </Heading>

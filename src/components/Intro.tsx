@@ -6,7 +6,14 @@ function Intro() {
     <>
       <Flex mt="120px">
         <Flex flexDirection="column" w="760px" h="500px" ml="20">
-          <Heading mt="8" mb="12" as="h1" fontSize="56px" color="blue.700">
+          <Heading
+            mt="8"
+            mb="12"
+            as="h1"
+            fontSize="56px"
+            color="rgb(62, 84, 163)"
+            font-family="Barlow, sans-serif"
+          >
             Improve your front-end coding skills by building real projects
           </Heading>
           <Text fontWeight="medium" mb="10" fontSize="24px">

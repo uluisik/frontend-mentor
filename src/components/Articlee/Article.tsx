@@ -22,7 +22,7 @@ const ARTICLE_ITEMS = [
 
 function Article() {
   return (
-    <Flex w="100%" h="320px">
+    <Flex w="100%">
       <Flex flexDirection="column">
         <Heading
           fontWeight="semibold"
@@ -58,7 +58,7 @@ function Article() {
             alignItems="center"
             justifyContent="center
             "
-            bg="red.500"
+            bg="rgb(237, 44, 73)"
             color="white"
             cursor="pointer"
           >
