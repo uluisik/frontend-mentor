@@ -1,5 +1,24 @@
 import { Flex, Heading, Input, Text } from "@chakra-ui/react";
-import React from "react";
+import ArticleCard from "./ArticleCard";
+
+const ARTICLE_ITEMS = [
+  {
+    title: "FRONTEND MENTOR",
+    a: ["Unlock Pro", "Contact us", "Blog"],
+  },
+  {
+    title: "EXPLORE",
+    a: ["Challenges", "Solutions", "Resources"],
+  },
+  {
+    title: "COMMUNITY",
+    a: ["Slack", "Guidelines", "FAQs"],
+  },
+  {
+    title: "FOR COMPANIES",
+    a: ["Hire developers"],
+  },
+];
 
 function Article() {
   return (
@@ -47,31 +66,10 @@ function Article() {
           </Flex>
         </Flex>
       </Flex>
-      <Flex gap="16">
-        <Flex ml="8" flexDirection="column">
-          <Heading fontSize="xl">FRONTEND MENTOR</Heading>
-          <Text>Unlock Pro</Text>
-          <Text>Contact us</Text>
-          <Text>Blog</Text>
-        </Flex>
-        <Flex flexDirection="column">
-          <Heading fontSize="xl">FRONTEND MENTOR</Heading>
-          <Text>Unlock Pro</Text>
-          <Text>Contact us</Text>
-          <Text>Blog</Text>
-        </Flex>
-        <Flex flexDirection="column">
-          <Heading fontSize="xl">FRONTEND MENTOR</Heading>
-          <Text>Unlock Pro</Text>
-          <Text>Contact us</Text>
-          <Text>Blog</Text>
-        </Flex>
-        <Flex flexDirection="column">
-          <Heading fontSize="xl">FRONTEND MENTOR</Heading>
-          <Text>Unlock Pro</Text>
-          <Text>Contact us</Text>
-          <Text>Blog</Text>
-        </Flex>
+      <Flex>
+        {ARTICLE_ITEMS.map((item) => (
+          <ArticleCard key={item.title} title={item.title} a={item.a} />
+        ))}
       </Flex>
     </Flex>
   );

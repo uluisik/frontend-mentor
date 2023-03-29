@@ -1,5 +1,5 @@
 import { ChakraProvider, theme } from "@chakra-ui/react";
-import Article from "./components/Article";
+import Article from "./components/Articlee/Article";
 import Aside from "./components/Aside";
 import Header from "./components/Header/Header";
 
