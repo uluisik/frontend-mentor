@@ -22,8 +22,8 @@ const ARTICLE_ITEMS = [
 
 function Article() {
   return (
-    <Flex border="1px solid red" w="100%" h="320px">
-      <Flex border="1px solid blue" flexDirection="column">
+    <Flex w="100%" h="320px">
+      <Flex flexDirection="column">
         <Heading
           fontWeight="semibold"
           fontSize="3xl"
