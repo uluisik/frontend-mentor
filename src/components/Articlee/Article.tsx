@@ -4,19 +4,19 @@ import ArticleCard from "./ArticleCard";
 const ARTICLE_ITEMS = [
   {
     title: "FRONTEND MENTOR",
-    a: ["Unlock Pro", "Contact us", "Blog"],
+    link: ["Unlock Pro", "Contact us", "Blog"],
   },
   {
     title: "EXPLORE",
-    a: ["Challenges", "Solutions", "Resources"],
+    link: ["Challenges", "Solutions", "Resources"],
   },
   {
     title: "COMMUNITY",
-    a: ["Slack", "Guidelines", "FAQs"],
+    link: ["Slack", "Guidelines", "FAQs"],
   },
   {
     title: "FOR COMPANIES",
-    a: ["Hire developers"],
+    link: ["Hire developers"],
   },
 ];
 
@@ -67,8 +67,8 @@ function Article() {
         </Flex>
       </Flex>
       <Flex>
-        {ARTICLE_ITEMS.map((item) => (
-          <ArticleCard key={item.title} title={item.title} a={item.a} />
+        {ARTICLE_ITEMS.map(({ title, link }) => (
+          <ArticleCard key={title} title={title} link={link} />
         ))}
       </Flex>
     </Flex>

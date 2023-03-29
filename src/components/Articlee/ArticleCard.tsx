@@ -1,15 +1,15 @@
 import { Flex, Heading, Text } from "@chakra-ui/react";
 type ArticleProps = {
   title: string;
-  a: string[];
+  link: string[];
 };
-function ArticleCard({ title, a }: ArticleProps) {
+function ArticleCard({ title, link }: ArticleProps) {
   return (
     <Flex ml="16" mr="6" flexDirection="column">
       <Heading fontSize="lg" mb="4">
         {title}
       </Heading>
-      {a.map((item) => (
+      {link.map((item) => (
         <Text
           _hover={{ borderBottom: "1px solid gray" }}
           cursor="pointer"
