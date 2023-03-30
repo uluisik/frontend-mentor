@@ -4,7 +4,7 @@ import { AiFillGithub } from "react-icons/ai";
 import HeaderItemCard from "./HeaderItemCard";
 
 const HEADER_ITEMS = ["CHALLENGES", "SOLUTIONS", "RESOURCES"];
-function Navbar() {
+function Header() {
   return (
     <>
       <Flex alignItems="center" justifyContent="center" bg="blue.600" h="60px">
@@ -86,4 +86,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default Header;
