@@ -1,9 +1,9 @@
-import { Divider, Flex, Text, Image, Spacer, Link } from "@chakra-ui/react";
-import { BsBagFill } from "react-icons/bs";
-import { AiFillGithub } from "react-icons/ai";
-import HeaderItemCard from "./HeaderItemCard";
+import { Divider, Flex, Text, Image, Spacer, Link } from '@chakra-ui/react';
+import { BsBagFill } from 'react-icons/bs';
+import { AiFillGithub } from 'react-icons/ai';
+import HeaderItemCard from './HeaderItemCard';
 
-const HEADER_ITEMS = ["CHALLENGES", "SOLUTIONS", "RESOURCES"];
+const HEADER_ITEMS = ['CHALLENGES', 'SOLUTIONS', 'RESOURCES'];
 function Header() {
   return (
     <>
@@ -15,7 +15,7 @@ function Header() {
           Looking to hire developers?
         </Text>
         <Flex
-          _hover={{ borderBottom: "none" }}
+          _hover={{ borderBottom: 'none' }}
           cursor="pointer"
           fontSize="lg"
           fontWeight="bold"
@@ -34,11 +34,7 @@ function Header() {
             <HeaderItemCard key={item} text={item} />
           ))}
 
-          <Flex
-            ml="4"
-            cursor="pointer"
-            _hover={{ borderBottom: "3px solid red" }}
-          >
+          <Flex ml="4" cursor="pointer" _hover={{ borderBottom: '3px solid red' }}>
             <Text as="em" fontWeight="bold" mr="2">
               UNLOCK
             </Text>
