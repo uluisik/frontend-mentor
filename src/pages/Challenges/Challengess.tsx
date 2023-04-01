@@ -1,4 +1,14 @@
-import { Flex, Spacer, Text } from '@chakra-ui/react';
+import {
+  Button,
+  Flex,
+  Menu,
+  MenuButton,
+  MenuDivider,
+  MenuItem,
+  MenuList,
+  Spacer,
+  Text
+} from '@chakra-ui/react';
 import Arrow from '../../icons/Arrow';
 import MainSearch from '../../components/Main/MainSearch';
 import Aside from '../../components/Aside';
@@ -23,8 +33,6 @@ function Challengess() {
         </Flex>
         <Spacer />
         <Flex
-          fontWeight="600"
-          fontStyle="italic"
           px="10"
           py="6"
           borderLeft="1px solid"
@@ -33,10 +41,33 @@ function Challengess() {
           cursor="pointer"
           _hover={{ bg: 'gray.100' }}
         >
-          SORT BY
-          <Text ml="2" mt="2">
-            <Arrow />
-          </Text>
+          <Menu>
+            <MenuButton
+              colorScheme="gray.100"
+              bg="none"
+              fontWeight="600"
+              fontStyle="italic"
+              as={Button}
+              rightIcon={<Arrow />}
+              _hover={{ bg: 'none' }}
+              color="black"
+            >
+              SORT BY
+            </MenuButton>
+            <MenuList minWidth="300px" overflowY="scroll">
+              <MenuItem px="8" _hover={{ bg: 'white' }} cursor="pointer" fontSize="19">
+                Most recent
+              </MenuItem>
+              <MenuDivider />
+              <MenuItem px="8" _hover={{ bg: 'white' }} cursor="pointer" fontSize="19">
+                Difficult (easier first)
+              </MenuItem>
+              <MenuDivider />
+              <MenuItem px="8" _hover={{ bg: 'white' }} cursor="pointer" fontSize="19">
+                Difficult (harder first)
+              </MenuItem>
+            </MenuList>
+          </Menu>
         </Flex>
         <Flex
           fontWeight="600"
@@ -52,10 +83,77 @@ function Challengess() {
           cursor="pointer"
           _hover={{ bg: 'gray.100' }}
         >
-          FILTER BY
-          <Text ml="8">
-            <Arrow />
-          </Text>
+          <Menu>
+            <MenuButton
+              colorScheme="gray.100"
+              bg="none"
+              fontWeight="600"
+              fontStyle="italic"
+              as={Button}
+              rightIcon={<Arrow />}
+              _hover={{ bg: 'none' }}
+              color="black"
+            >
+              FILTER BY
+            </MenuButton>
+            <MenuList minWidth="300px" overflowY="scroll">
+              <MenuItem px="8" _hover={{ bg: 'white' }} cursor="pointer" fontSize="19">
+                Most recent
+              </MenuItem>
+              <MenuDivider />
+              <MenuItem px="8" _hover={{ bg: 'white' }} cursor="pointer" fontSize="19">
+                Difficult (easier first)
+              </MenuItem>
+              <MenuDivider />
+              <MenuItem px="8" _hover={{ bg: 'white' }} cursor="pointer" fontSize="19">
+                Most recent
+              </MenuItem>
+              <MenuDivider />
+              <MenuItem px="8" _hover={{ bg: 'white' }} cursor="pointer" fontSize="19">
+                Most recent
+              </MenuItem>
+              <MenuDivider />
+              <MenuItem px="8" _hover={{ bg: 'white' }} cursor="pointer" fontSize="19">
+                Most recent
+              </MenuItem>
+              <MenuDivider />
+              <MenuItem px="8" _hover={{ bg: 'white' }} cursor="pointer" fontSize="19">
+                Most recent
+              </MenuItem>
+              <MenuDivider />
+              <MenuItem px="8" _hover={{ bg: 'white' }} cursor="pointer" fontSize="19">
+                Most recent
+              </MenuItem>
+              <MenuDivider />
+              <MenuItem px="8" _hover={{ bg: 'white' }} cursor="pointer" fontSize="19">
+                Most recent
+              </MenuItem>
+              <MenuDivider />
+              <MenuItem px="8" _hover={{ bg: 'white' }} cursor="pointer" fontSize="19">
+                Most recent
+              </MenuItem>
+              <MenuDivider />
+              <MenuItem px="8" _hover={{ bg: 'white' }} cursor="pointer" fontSize="19">
+                Most recent
+              </MenuItem>
+              <MenuDivider />
+              <MenuItem px="8" _hover={{ bg: 'white' }} cursor="pointer" fontSize="19">
+                Most recent
+              </MenuItem>
+              <MenuDivider />
+              <MenuItem px="8" _hover={{ bg: 'white' }} cursor="pointer" fontSize="19">
+                Most recent
+              </MenuItem>
+              <MenuDivider />
+              <MenuItem px="8" _hover={{ bg: 'white' }} cursor="pointer" fontSize="19">
+                Most recent
+              </MenuItem>
+              <MenuDivider />
+              <MenuItem px="8" _hover={{ bg: 'white' }} cursor="pointer" fontSize="19">
+                Most recent
+              </MenuItem>
+            </MenuList>
+          </Menu>
         </Flex>
       </Flex>
       <Flex flexDirection="column" alignItems="center" justifyContent="center">
