@@ -6,8 +6,7 @@ import {
   MenuDivider,
   MenuItem,
   MenuList,
-  Spacer,
-  Text
+  Spacer
 } from '@chakra-ui/react';
 import Arrow from '../../icons/Arrow';
 import MainSearch from '../../components/Main/MainSearch';
