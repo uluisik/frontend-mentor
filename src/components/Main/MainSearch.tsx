@@ -1,6 +1,5 @@
-import { Flex, Heading, Input, Text } from "@chakra-ui/react";
-import React from "react";
-import { FaSlack } from "react-icons/fa";
+import { Flex, Heading, Input, Text } from '@chakra-ui/react';
+import { FaSlack } from 'react-icons/fa';
 
 function MainSearch() {
   return (
@@ -25,8 +24,7 @@ function MainSearch() {
         JOIN OUR SLACK COMMUNITY
       </Heading>
       <Text color="white" fontSize="3xl" fontWeight="semibold">
-        Join over 180.000 people taking the challenges, talking about their
-        code, helping each
+        Join over 180.000 people taking the challenges, talking about their code, helping each
       </Text>
       <Text color="white" fontSize="3xl" fontWeight="semibold" mb="40px">
         other, and chatting about all things front-end!
