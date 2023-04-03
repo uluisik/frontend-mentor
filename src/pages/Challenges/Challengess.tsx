@@ -3,15 +3,19 @@ import {
   Flex,
   Menu,
   MenuButton,
-  MenuDivider,
   MenuItem,
   MenuList,
   Spacer,
+  MenuDivider,
   Text
 } from '@chakra-ui/react';
 import Arrow from '../../icons/Arrow';
 import MainSearch from '../../components/Main/MainSearch';
 import Aside from '../../components/Aside';
+
+const SORT_BY = ['Most recent', 'Difficult (easier first)', ' Difficult (harder first)'];
+
+const FILTER_BY = ['Free', 'Free+', 'Premium'];
 
 function Challengess() {
   return (
@@ -57,20 +61,15 @@ function Challengess() {
               SORT BY
             </MenuButton>
             <MenuList minWidth="300px" overflowY="scroll">
-              <MenuItem px="8" _hover={{ bg: 'white' }} cursor="pointer" fontSize="19">
-                Most recent
-              </MenuItem>
-              <MenuDivider />
-              <MenuItem px="8" _hover={{ bg: 'white' }} cursor="pointer" fontSize="19">
-                Difficult (easier first)
-              </MenuItem>
-              <MenuDivider />
-              <MenuItem px="8" _hover={{ bg: 'white' }} cursor="pointer" fontSize="19">
-                Difficult (harder first)
-              </MenuItem>
+              {SORT_BY.map((item) => (
+                <MenuItem key="item" px="8" _hover={{ bg: 'white' }} cursor="pointer" fontSize="19">
+                  {item}
+                </MenuItem>
+              ))}
             </MenuList>
           </Menu>
         </Flex>
+
         <Flex
           fontWeight="600"
           fontStyle="italic"
@@ -101,7 +100,7 @@ function Challengess() {
               </Text>
             </MenuButton>
             <MenuList minWidth="300px" overflowY="scroll">
-              <Text
+              <MenuItem
                 color="RGBA(0, 0, 0, 0.06)"
                 fontWeight="bold"
                 fontStyle="italic"
@@ -110,23 +109,20 @@ function Challengess() {
                 fontSize="19"
               >
                 TYPE
-              </Text>
-              <MenuDivider />
-              <MenuItem px="3" _hover={{ bg: 'white' }} cursor="pointer" fontSize="19">
-                <Flex border="4px solid" borderColor="rgb(62, 84, 163)" w="28px" h="28px" mr="3" />
-                Free
               </MenuItem>
-              <MenuDivider />
-              <MenuItem px="3" _hover={{ bg: 'white' }} cursor="pointer" fontSize="19">
-                <Flex border="4px solid" borderColor="rgb(62, 84, 163)" w="28px" h="28px" mr="3" />
-                Free+
-              </MenuItem>
-              <MenuDivider />
-              <MenuItem px="3" _hover={{ bg: 'white' }} cursor="pointer" fontSize="19">
-                <Flex border="4px solid" borderColor="rgb(62, 84, 163)" w="28px" h="28px" mr="3" />
-                Premium
-              </MenuItem>
-              <MenuDivider />
+              {FILTER_BY.map((item) => (
+                <MenuItem px="3" _hover={{ bg: 'white' }} cursor="pointer" fontSize="19">
+                  <Flex
+                    border="4px solid"
+                    borderColor="rgb(62, 84, 163)"
+                    w="28px"
+                    h="28px"
+                    mr="3"
+                  />
+                  {item}
+                </MenuItem>
+              ))}
+
               <Text
                 color="RGBA(0, 0, 0, 0.06)"
                 fontWeight="bold"
