@@ -1,9 +1,9 @@
-import { Flex, Heading } from '@chakra-ui/react';
+import { Flex } from '@chakra-ui/react';
 import CardItem from './CardItem';
 
 const CARD_ITEMS = [
   {
-    image: 'image/work.webp',
+    image: 'image/1.webp',
     title: 'Workit landing page',
     techs: ['HTML', 'CSS'],
     level: 1,
@@ -12,7 +12,7 @@ const CARD_ITEMS = [
     price: 'PREMIUM'
   },
   {
-    image: 'image/results.webp',
+    image: 'image/work.webp',
     title: 'Results summary component',
     techs: ['HTML', 'CSS'],
     level: 1,
@@ -22,7 +22,7 @@ const CARD_ITEMS = [
     price: 'FREE'
   },
   {
-    image: 'image/dictionary.webp',
+    image: 'image/3.webp',
     title: 'Dictionary web app',
     techs: ['HTML', 'CSS', 'JS', 'API'],
     level: 3,
@@ -32,7 +32,7 @@ const CARD_ITEMS = [
     price: 'PREMIUM'
   },
   {
-    image: 'image/multi.webp',
+    image: 'image/4.webp',
     title: 'Multi-step form',
     techs: ['HTML', 'CSS', 'JS'],
     level: 4,
@@ -42,7 +42,7 @@ const CARD_ITEMS = [
     price: 'FREE'
   },
   {
-    image: 'image/single.webp',
+    image: 'image/5.webp',
     title: 'Single-page developer portfolio',
     techs: ['HTML', 'CSS', 'JS'],
     level: 2,
@@ -52,7 +52,7 @@ const CARD_ITEMS = [
     price: 'PREMIUM'
   },
   {
-    image: 'image/news.webp',
+    image: 'image/6.webp',
     title: 'News homepage',
     techs: ['HTML', 'CSS', 'JS'],
     level: 2,
@@ -62,7 +62,7 @@ const CARD_ITEMS = [
     price: 'FREE'
   },
   {
-    image: 'image/work.webp',
+    image: 'image/7.webp',
     title: 'Workit landing page',
     techs: ['HTML', 'CSS'],
     level: 1,
@@ -71,7 +71,7 @@ const CARD_ITEMS = [
     price: 'PREMIUM'
   },
   {
-    image: 'image/work.webp',
+    image: 'image/8.webp',
     title: 'Workit landing page',
     techs: ['HTML', 'CSS'],
     level: 1,
@@ -80,7 +80,7 @@ const CARD_ITEMS = [
     price: 'PREMIUM'
   },
   {
-    image: 'image/work.webp',
+    image: 'image/9.webp',
     title: 'Workit landing page',
     techs: ['HTML', 'CSS'],
     level: 1,
@@ -89,7 +89,7 @@ const CARD_ITEMS = [
     price: 'PREMIUM'
   },
   {
-    image: 'image/work.webp',
+    image: 'image/10.webp',
     title: 'Workit landing page',
     techs: ['HTML', 'CSS'],
     level: 1,
@@ -98,7 +98,7 @@ const CARD_ITEMS = [
     price: 'PREMIUM'
   },
   {
-    image: 'image/work.webp',
+    image: 'image/11.webp',
     title: 'Workit landing page',
     techs: ['HTML', 'CSS'],
     level: 1,
@@ -107,7 +107,7 @@ const CARD_ITEMS = [
     price: 'PREMIUM'
   },
   {
-    image: 'image/work.webp',
+    image: 'image/12.webp',
     title: 'Workit landing page',
     techs: ['HTML', 'CSS'],
     level: 1,
@@ -116,7 +116,7 @@ const CARD_ITEMS = [
     price: 'PREMIUM'
   },
   {
-    image: 'image/work.webp',
+    image: 'image/13.webp',
     title: 'Workit landing page',
     techs: ['HTML', 'CSS'],
     level: 1,
@@ -125,7 +125,7 @@ const CARD_ITEMS = [
     price: 'PREMIUM'
   },
   {
-    image: 'image/work.webp',
+    image: 'image/14.webp',
     title: 'Workit landing page',
     techs: ['HTML', 'CSS'],
     level: 1,
@@ -134,7 +134,7 @@ const CARD_ITEMS = [
     price: 'PREMIUM'
   },
   {
-    image: 'image/work.webp',
+    image: 'image/15.webp',
     title: 'Workit landing page',
     techs: ['HTML', 'CSS'],
     level: 1,
@@ -143,7 +143,7 @@ const CARD_ITEMS = [
     price: 'PREMIUM'
   },
   {
-    image: 'image/work.webp',
+    image: 'image/16.webp',
     title: 'Workit landing page',
     techs: ['HTML', 'CSS'],
     level: 1,
@@ -152,7 +152,7 @@ const CARD_ITEMS = [
     price: 'PREMIUM'
   },
   {
-    image: 'image/work.webp',
+    image: 'image/17.webp',
     title: 'Workit landing page',
     techs: ['HTML', 'CSS'],
     level: 1,
@@ -161,7 +161,7 @@ const CARD_ITEMS = [
     price: 'PREMIUM'
   },
   {
-    image: 'image/work.webp',
+    image: 'image/18.webp',
     title: 'Workit landing page',
     techs: ['HTML', 'CSS'],
     level: 1,
@@ -170,7 +170,7 @@ const CARD_ITEMS = [
     price: 'PREMIUM'
   },
   {
-    image: 'image/work.webp',
+    image: 'image/19.webp',
     title: 'Workit landing page',
     techs: ['HTML', 'CSS'],
     level: 1,
@@ -179,7 +179,7 @@ const CARD_ITEMS = [
     price: 'PREMIUM'
   },
   {
-    image: 'image/work.webp',
+    image: 'image/20.webp',
     title: 'Workit landing page',
     techs: ['HTML', 'CSS'],
     level: 1,
@@ -188,7 +188,7 @@ const CARD_ITEMS = [
     price: 'PREMIUM'
   },
   {
-    image: 'image/work.webp',
+    image: 'image/21.webp',
     title: 'Workit landing page',
     techs: ['HTML', 'CSS'],
     level: 1,
@@ -197,7 +197,7 @@ const CARD_ITEMS = [
     price: 'PREMIUM'
   },
   {
-    image: 'image/work.webp',
+    image: 'image/22.webp',
     title: 'Workit landing page',
     techs: ['HTML', 'CSS'],
     level: 1,
@@ -206,7 +206,7 @@ const CARD_ITEMS = [
     price: 'PREMIUM'
   },
   {
-    image: 'image/work.webp',
+    image: 'image/23.webp',
     title: 'Workit landing page',
     techs: ['HTML', 'CSS'],
     level: 1,
@@ -215,331 +215,7 @@ const CARD_ITEMS = [
     price: 'PREMIUM'
   },
   {
-    image: 'image/work.webp',
-    title: 'Workit landing page',
-    techs: ['HTML', 'CSS'],
-    level: 1,
-    description:
-      'This HTML and CSS-only landing page will be an excellent test of your UI and responsive skills. There’s also some fun to be had creating the curved section borders!',
-    price: 'PREMIUM'
-  },
-  {
-    image: 'image/work.webp',
-    title: 'Workit landing page',
-    techs: ['HTML', 'CSS'],
-    level: 1,
-    description:
-      'This HTML and CSS-only landing page will be an excellent test of your UI and responsive skills. There’s also some fun to be had creating the curved section borders!',
-    price: 'PREMIUM'
-  },
-  {
-    image: 'image/work.webp',
-    title: 'Workit landing page',
-    techs: ['HTML', 'CSS'],
-    level: 1,
-    description:
-      'This HTML and CSS-only landing page will be an excellent test of your UI and responsive skills. There’s also some fun to be had creating the curved section borders!',
-    price: 'PREMIUM'
-  },
-  {
-    image: 'image/work.webp',
-    title: 'Workit landing page',
-    techs: ['HTML', 'CSS'],
-    level: 1,
-    description:
-      'This HTML and CSS-only landing page will be an excellent test of your UI and responsive skills. There’s also some fun to be had creating the curved section borders!',
-    price: 'PREMIUM'
-  },
-  {
-    image: 'image/work.webp',
-    title: 'Workit landing page',
-    techs: ['HTML', 'CSS'],
-    level: 1,
-    description:
-      'This HTML and CSS-only landing page will be an excellent test of your UI and responsive skills. There’s also some fun to be had creating the curved section borders!',
-    price: 'PREMIUM'
-  },
-  {
-    image: 'image/work.webp',
-    title: 'Workit landing page',
-    techs: ['HTML', 'CSS'],
-    level: 1,
-    description:
-      'This HTML and CSS-only landing page will be an excellent test of your UI and responsive skills. There’s also some fun to be had creating the curved section borders!',
-    price: 'PREMIUM'
-  },
-  {
-    image: 'image/work.webp',
-    title: 'Workit landing page',
-    techs: ['HTML', 'CSS'],
-    level: 1,
-    description:
-      'This HTML and CSS-only landing page will be an excellent test of your UI and responsive skills. There’s also some fun to be had creating the curved section borders!',
-    price: 'PREMIUM'
-  },
-  {
-    image: 'image/work.webp',
-    title: 'Workit landing page',
-    techs: ['HTML', 'CSS'],
-    level: 1,
-    description:
-      'This HTML and CSS-only landing page will be an excellent test of your UI and responsive skills. There’s also some fun to be had creating the curved section borders!',
-    price: 'PREMIUM'
-  },
-  {
-    image: 'image/work.webp',
-    title: 'Workit landing page',
-    techs: ['HTML', 'CSS'],
-    level: 1,
-    description:
-      'This HTML and CSS-only landing page will be an excellent test of your UI and responsive skills. There’s also some fun to be had creating the curved section borders!',
-    price: 'PREMIUM'
-  },
-  {
-    image: 'image/work.webp',
-    title: 'Workit landing page',
-    techs: ['HTML', 'CSS'],
-    level: 1,
-    description:
-      'This HTML and CSS-only landing page will be an excellent test of your UI and responsive skills. There’s also some fun to be had creating the curved section borders!',
-    price: 'PREMIUM'
-  },
-  {
-    image: 'image/work.webp',
-    title: 'Workit landing page',
-    techs: ['HTML', 'CSS'],
-    level: 1,
-    description:
-      'This HTML and CSS-only landing page will be an excellent test of your UI and responsive skills. There’s also some fun to be had creating the curved section borders!',
-    price: 'PREMIUM'
-  },
-  {
-    image: 'image/work.webp',
-    title: 'Workit landing page',
-    techs: ['HTML', 'CSS'],
-    level: 1,
-    description:
-      'This HTML and CSS-only landing page will be an excellent test of your UI and responsive skills. There’s also some fun to be had creating the curved section borders!',
-    price: 'PREMIUM'
-  },
-  {
-    image: 'image/work.webp',
-    title: 'Workit landing page',
-    techs: ['HTML', 'CSS'],
-    level: 1,
-    description:
-      'This HTML and CSS-only landing page will be an excellent test of your UI and responsive skills. There’s also some fun to be had creating the curved section borders!',
-    price: 'PREMIUM'
-  },
-  {
-    image: 'image/work.webp',
-    title: 'Workit landing page',
-    techs: ['HTML', 'CSS'],
-    level: 1,
-    description:
-      'This HTML and CSS-only landing page will be an excellent test of your UI and responsive skills. There’s also some fun to be had creating the curved section borders!',
-    price: 'PREMIUM'
-  },
-  {
-    image: 'image/work.webp',
-    title: 'Workit landing page',
-    techs: ['HTML', 'CSS'],
-    level: 1,
-    description:
-      'This HTML and CSS-only landing page will be an excellent test of your UI and responsive skills. There’s also some fun to be had creating the curved section borders!',
-    price: 'PREMIUM'
-  },
-  {
-    image: 'image/work.webp',
-    title: 'Workit landing page',
-    techs: ['HTML', 'CSS'],
-    level: 1,
-    description:
-      'This HTML and CSS-only landing page will be an excellent test of your UI and responsive skills. There’s also some fun to be had creating the curved section borders!',
-    price: 'PREMIUM'
-  },
-  {
-    image: 'image/work.webp',
-    title: 'Workit landing page',
-    techs: ['HTML', 'CSS'],
-    level: 1,
-    description:
-      'This HTML and CSS-only landing page will be an excellent test of your UI and responsive skills. There’s also some fun to be had creating the curved section borders!',
-    price: 'PREMIUM'
-  },
-  {
-    image: 'image/work.webp',
-    title: 'Workit landing page',
-    techs: ['HTML', 'CSS'],
-    level: 1,
-    description:
-      'This HTML and CSS-only landing page will be an excellent test of your UI and responsive skills. There’s also some fun to be had creating the curved section borders!',
-    price: 'PREMIUM'
-  },
-  {
-    image: 'image/work.webp',
-    title: 'Workit landing page',
-    techs: ['HTML', 'CSS'],
-    level: 1,
-    description:
-      'This HTML and CSS-only landing page will be an excellent test of your UI and responsive skills. There’s also some fun to be had creating the curved section borders!',
-    price: 'PREMIUM'
-  },
-  {
-    image: 'image/work.webp',
-    title: 'Workit landing page',
-    techs: ['HTML', 'CSS'],
-    level: 1,
-    description:
-      'This HTML and CSS-only landing page will be an excellent test of your UI and responsive skills. There’s also some fun to be had creating the curved section borders!',
-    price: 'PREMIUM'
-  },
-  {
-    image: 'image/work.webp',
-    title: 'Workit landing page',
-    techs: ['HTML', 'CSS'],
-    level: 1,
-    description:
-      'This HTML and CSS-only landing page will be an excellent test of your UI and responsive skills. There’s also some fun to be had creating the curved section borders!',
-    price: 'PREMIUM'
-  },
-  {
-    image: 'image/work.webp',
-    title: 'Workit landing page',
-    techs: ['HTML', 'CSS'],
-    level: 1,
-    description:
-      'This HTML and CSS-only landing page will be an excellent test of your UI and responsive skills. There’s also some fun to be had creating the curved section borders!',
-    price: 'PREMIUM'
-  },
-  {
-    image: 'image/work.webp',
-    title: 'Workit landing page',
-    techs: ['HTML', 'CSS'],
-    level: 1,
-    description:
-      'This HTML and CSS-only landing page will be an excellent test of your UI and responsive skills. There’s also some fun to be had creating the curved section borders!',
-    price: 'PREMIUM'
-  },
-  {
-    image: 'image/work.webp',
-    title: 'Workit landing page',
-    techs: ['HTML', 'CSS'],
-    level: 1,
-    description:
-      'This HTML and CSS-only landing page will be an excellent test of your UI and responsive skills. There’s also some fun to be had creating the curved section borders!',
-    price: 'PREMIUM'
-  },
-  {
-    image: 'image/work.webp',
-    title: 'Workit landing page',
-    techs: ['HTML', 'CSS'],
-    level: 1,
-    description:
-      'This HTML and CSS-only landing page will be an excellent test of your UI and responsive skills. There’s also some fun to be had creating the curved section borders!',
-    price: 'PREMIUM'
-  },
-  {
-    image: 'image/work.webp',
-    title: 'Workit landing page',
-    techs: ['HTML', 'CSS'],
-    level: 1,
-    description:
-      'This HTML and CSS-only landing page will be an excellent test of your UI and responsive skills. There’s also some fun to be had creating the curved section borders!',
-    price: 'PREMIUM'
-  },
-  {
-    image: 'image/work.webp',
-    title: 'Workit landing page',
-    techs: ['HTML', 'CSS'],
-    level: 1,
-    description:
-      'This HTML and CSS-only landing page will be an excellent test of your UI and responsive skills. There’s also some fun to be had creating the curved section borders!',
-    price: 'PREMIUM'
-  },
-  {
-    image: 'image/work.webp',
-    title: 'Workit landing page',
-    techs: ['HTML', 'CSS'],
-    level: 1,
-    description:
-      'This HTML and CSS-only landing page will be an excellent test of your UI and responsive skills. There’s also some fun to be had creating the curved section borders!',
-    price: 'PREMIUM'
-  },
-  {
-    image: 'image/work.webp',
-    title: 'Workit landing page',
-    techs: ['HTML', 'CSS'],
-    level: 1,
-    description:
-      'This HTML and CSS-only landing page will be an excellent test of your UI and responsive skills. There’s also some fun to be had creating the curved section borders!',
-    price: 'PREMIUM'
-  },
-  {
-    image: 'image/work.webp',
-    title: 'Workit landing page',
-    techs: ['HTML', 'CSS'],
-    level: 1,
-    description:
-      'This HTML and CSS-only landing page will be an excellent test of your UI and responsive skills. There’s also some fun to be had creating the curved section borders!',
-    price: 'PREMIUM'
-  },
-  {
-    image: 'image/work.webp',
-    title: 'Workit landing page',
-    techs: ['HTML', 'CSS'],
-    level: 1,
-    description:
-      'This HTML and CSS-only landing page will be an excellent test of your UI and responsive skills. There’s also some fun to be had creating the curved section borders!',
-    price: 'PREMIUM'
-  },
-  {
-    image: 'image/work.webp',
-    title: 'Workit landing page',
-    techs: ['HTML', 'CSS'],
-    level: 1,
-    description:
-      'This HTML and CSS-only landing page will be an excellent test of your UI and responsive skills. There’s also some fun to be had creating the curved section borders!',
-    price: 'PREMIUM'
-  },
-  {
-    image: 'image/work.webp',
-    title: 'Workit landing page',
-    techs: ['HTML', 'CSS'],
-    level: 1,
-    description:
-      'This HTML and CSS-only landing page will be an excellent test of your UI and responsive skills. There’s also some fun to be had creating the curved section borders!',
-    price: 'PREMIUM'
-  },
-  {
-    image: 'image/work.webp',
-    title: 'Workit landing page',
-    techs: ['HTML', 'CSS'],
-    level: 1,
-    description:
-      'This HTML and CSS-only landing page will be an excellent test of your UI and responsive skills. There’s also some fun to be had creating the curved section borders!',
-    price: 'PREMIUM'
-  },
-  {
-    image: 'image/work.webp',
-    title: 'Workit landing page',
-    techs: ['HTML', 'CSS'],
-    level: 1,
-    description:
-      'This HTML and CSS-only landing page will be an excellent test of your UI and responsive skills. There’s also some fun to be had creating the curved section borders!',
-    price: 'PREMIUM'
-  },
-  {
-    image: 'image/work.webp',
-    title: 'Workit landing page',
-    techs: ['HTML', 'CSS'],
-    level: 1,
-    description:
-      'This HTML and CSS-only landing page will be an excellent test of your UI and responsive skills. There’s also some fun to be had creating the curved section borders!',
-    price: 'PREMIUM'
-  },
-  {
-    image: 'image/work.webp',
+    image: 'image/24.webp',
     title: 'Workit landing page',
     techs: ['HTML', 'CSS'],
     level: 1,

@@ -27,7 +27,14 @@ function Header() {
       </Flex>
 
       <Flex alignItems="center">
-        <Image w="250px" h="80px" p="6" src="image/logo-desktop.svg" />
+        <Link href="/">
+          <Image
+            w="250px"
+            h="80px"
+            p="6"
+            src="https://www.frontendmentor.io/static/images/logo-desktop.svg"
+          />
+        </Link>
         <Spacer />
         <Flex h="80px" alignItems="center" justifyContent="center">
           {HEADER_ITEMS.map((item) => (

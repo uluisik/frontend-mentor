@@ -22,10 +22,9 @@ const FILTER_BY = ['Free', 'Free+', 'Premium'];
 function Challengess() {
   return (
     <>
-      <Flex mb="6" border="1px solid" borderColor="gray.300" borderRightColor="white">
+      <Flex h="60px" mb="6" border="1px solid" borderColor="gray.300" borderRightColor="white">
         <Flex
           px="10"
-          py="6"
           ml="8"
           borderLeft="1px solid"
           borderLeftColor="gray.300"
@@ -42,12 +41,12 @@ function Challengess() {
         <Spacer />
         <Flex
           px="10"
-          py="6"
           borderLeft="1px solid"
           borderLeftColor="gray.300"
           fontSize="15"
           cursor="pointer"
           _hover={{ bg: 'gray.100' }}
+          alignItems="center"
         >
           <Menu>
             <MenuButton
@@ -76,7 +75,6 @@ function Challengess() {
           fontWeight="600"
           fontStyle="italic"
           px="10"
-          py="6"
           borderLeft="1px solid"
           borderLeftColor="gray.300"
           mr="8"
@@ -85,6 +83,8 @@ function Challengess() {
           flexDirection="column"
           cursor="pointer"
           _hover={{ bg: 'gray.100' }}
+          alignItems="center"
+          justifyContent="center"
         >
           <Menu>
             <MenuButton
@@ -93,13 +93,11 @@ function Challengess() {
               fontWeight="600"
               fontStyle="italic"
               as={Button}
+              rightIcon={<Arrow />}
               _hover={{ bg: 'none' }}
               color="black"
             >
               FILTER BY
-              <Text ml="8">
-                <Arrow />
-              </Text>
             </MenuButton>
             <MenuList minWidth="300px" overflowY="scroll">
               <MenuItem
