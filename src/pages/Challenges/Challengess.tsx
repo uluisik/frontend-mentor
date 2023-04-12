@@ -12,6 +12,7 @@ import {
 import Arrow from '../../icons/Arrow';
 import MainSearch from '../../components/Main/MainSearch';
 import Aside from '../../components/Aside';
+import ModalCard from '../../components/ModalCard';
 
 const SORT_BY = ['Most recent', 'Difficult (easier first)', ' Difficult (harder first)'];
 
@@ -20,7 +21,7 @@ const FILTER_BY = ['Free', 'Free+', 'Premium'];
 function Challengess() {
   return (
     <>
-      <Flex mb="10" border="1px solid" borderColor="gray.300" borderRightColor="white">
+      <Flex mb="6" border="1px solid" borderColor="gray.300" borderRightColor="white">
         <Flex
           px="10"
           py="6"
@@ -189,6 +190,7 @@ function Challengess() {
           </Menu>
         </Flex>
       </Flex>
+      <ModalCard />
       <Flex flexDirection="column" alignItems="center" justifyContent="center">
         <MainSearch />
       </Flex>
