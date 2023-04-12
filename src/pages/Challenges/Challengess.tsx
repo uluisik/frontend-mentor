@@ -13,6 +13,7 @@ import Arrow from '../../icons/Arrow';
 import MainSearch from '../../components/Main/MainSearch';
 import Aside from '../../components/Aside';
 import ModalCard from '../../components/ModalCard';
+import Card from './Card';
 
 const SORT_BY = ['Most recent', 'Difficult (easier first)', ' Difficult (harder first)'];
 
@@ -191,6 +192,7 @@ function Challengess() {
         </Flex>
       </Flex>
       <ModalCard />
+      <Card />
       <Flex flexDirection="column" alignItems="center" justifyContent="center">
         <MainSearch />
       </Flex>
