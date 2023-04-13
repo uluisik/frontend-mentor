@@ -8,6 +8,8 @@ import Solutions from './pages/Solutions/Solutions';
 import Resources from './pages/Resources/Resources';
 import Unlockpro from './pages/Unlockpro/Unlockpro';
 import Challengess from './pages/Challenges/Challengess';
+import AllSolutions from './pages/AllSolutions/AllSolutions';
+import Tags from './pages/Tags/Tags';
 
 export const App = () => (
   <ChakraProvider theme={theme}>
@@ -19,6 +21,8 @@ export const App = () => (
         <Route path="/solutions" element={<Solutions />} />
         <Route path="/resources" element={<Resources />} />
         <Route path="/unlockpro" element={<Unlockpro />} />
+        <Route path="/all" element={<AllSolutions />} />
+        <Route path="/tags" element={<Tags />} />
       </Routes>
     </BrowserRouter>
     <Article />
