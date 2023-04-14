@@ -1,5 +1,4 @@
 import { Flex, Heading, Input, Text } from '@chakra-ui/react';
-import React from 'react';
 import { FaSlack } from 'react-icons/fa';
 
 function MainSearch() {
