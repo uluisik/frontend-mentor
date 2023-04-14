@@ -1,6 +1,45 @@
-import { Flex, Input, Spacer, Text } from '@chakra-ui/react';
+import { Flex, Input, Spacer, Text, Link } from '@chakra-ui/react';
 import Aside from '../../components/Aside';
+import TagsCard from './TagsCard';
 
+const TAGS_ITEMS = [
+  '#accessibility',
+  '#airtable',
+  '#angular',
+  '#animation',
+  '#astro',
+  '#axios',
+  '#backbone',
+  '#bem',
+  '#bootstrap',
+  '#bulma',
+  '#chai',
+  '#chakra-ui',
+  '#chart-js',
+  '#contentful',
+  '#cube-css',
+  '#cypress',
+  '#d3',
+  '#deno',
+  '#django',
+  '#editor-x',
+  '#eleventy',
+  '#elm',
+  '#ember',
+  '#emotion',
+  '#express',
+  '#fetch',
+  '#fire-cms',
+  '#firebase',
+  '#flask',
+  '#flutter',
+  '#foundation',
+  '#framer-motion',
+  '#fresh',
+  '#gatsby',
+  '#golang',
+  '#graphql'
+];
 function Tags() {
   return (
     <>
@@ -26,15 +65,19 @@ function Tags() {
         </Flex>
         <Spacer />
         <Flex alignItems="center" mr="12" fontWeight="semibold" fontSize="md">
-          <Text _hover={{ borderBottom: '3px solid red' }} cursor="pointer" mr="8">
-            Solutions
-          </Text>
+          <Link href="solutions">
+            <Text _hover={{ borderBottom: '3px solid red' }} cursor="pointer" mr="8">
+              Solutions
+            </Text>
+          </Link>
           <Text _hover={{ borderBottom: '3px solid red' }} cursor="pointer" mr="8">
             Tags
           </Text>
-          <Text _hover={{ borderBottom: '3px solid red' }} cursor="pointer">
-            Wall of Fame
-          </Text>
+          <Link href="wall-of-fame">
+            <Text _hover={{ borderBottom: '3px solid red' }} cursor="pointer">
+              Wall of Fame
+            </Text>
+          </Link>
         </Flex>
       </Flex>
       <Flex mt="20" mx="20">
@@ -42,12 +85,12 @@ function Tags() {
           Tags
         </Text>
         <Spacer />
-        <Input
-          h="50px"
-          w="300px"
-          placeholder="Search tags..."
-          _placeholder={{ fontSize: 'lg' }}
-        ></Input>
+        <Input h="50px" w="300px" placeholder="Search tags..." _placeholder={{ fontSize: 'lg' }} />
+      </Flex>
+      <Flex mx="20" gap="8" flexDirection="row" flexWrap="wrap">
+        {TAGS_ITEMS.map((item) => (
+          <TagsCard key={item} text={item} />
+        ))}
       </Flex>
       <Aside />
     </>
