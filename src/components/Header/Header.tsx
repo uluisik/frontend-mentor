@@ -40,26 +40,27 @@ function Header() {
           {HEADER_ITEMS.map((item) => (
             <HeaderItemCard key={item} text={item} />
           ))}
-
-          <Flex ml="4" cursor="pointer" _hover={{ borderBottom: '3px solid red' }}>
-            <Text as="em" fontWeight="bold" mr="2">
-              UNLOCK
-            </Text>
-            <Text
-              display="flex"
-              alignItems="center"
-              justifyContent="center"
-              fontSize="xs"
-              fontWeight="bold"
-              bg="blue"
-              color="white"
-              w="30px"
-              h="25px"
-              borderRadius="4px"
-            >
-              PRO
-            </Text>
-          </Flex>
+          <Link href="unlockpro">
+            <Flex ml="4" cursor="pointer" _hover={{ borderBottom: '3px solid red' }}>
+              <Text as="em" fontWeight="bold" mr="2">
+                UNLOCK
+              </Text>
+              <Text
+                display="flex"
+                alignItems="center"
+                justifyContent="center"
+                fontSize="xs"
+                fontWeight="bold"
+                bg="blue"
+                color="white"
+                w="30px"
+                h="25px"
+                borderRadius="4px"
+              >
+                PRO
+              </Text>
+            </Flex>
+          </Link>
           <Flex
             h="50px"
             w="220px"

@@ -4,15 +4,18 @@ import {
   Divider,
   Flex,
   Heading,
-  Input,
   Menu,
   MenuButton,
   MenuItem,
   MenuList,
   Spacer,
-  Text
+  Text,
+  Link
 } from '@chakra-ui/react';
-import { FaSlack } from 'react-icons/fa';
+import { AiOutlineTwitter } from 'react-icons/ai';
+import { FaFacebookF } from 'react-icons/fa';
+import Challenges from '../../components/Challenges/Challenges';
+import MainSearch from '../../components/Main/MainSearch';
 import Arrow from '../../icons/Arrow';
 import Card from './Card';
 
@@ -219,6 +222,53 @@ function Resources() {
         <Text fontSize="3xl" fontWeight="semibold">
           Know someone who might find this list useful? Share it around!
         </Text>
+        <Flex mt="20" gap="10">
+          <Flex
+            border="3px solid"
+            borderColor="rgb(59, 88, 151)"
+            w="70px"
+            h="70px"
+            borderRadius="50%"
+            fontSize="4xl"
+            justifyContent="center"
+            alignItems="center"
+            color="rgb(59, 88, 151)"
+            cursor="pointer"
+          >
+            <Link href="https://tr-tr.facebook.com/" target="_blank">
+              <FaFacebookF />
+            </Link>
+          </Flex>
+          <Flex
+            justifyContent="center"
+            alignItems="center"
+            border="3px solid"
+            borderColor="blue.300"
+            w="70px"
+            h="70px"
+            borderRadius="50%"
+            color="blue.300"
+            fontSize="4xl"
+            cursor="pointer"
+          >
+            <Link href="https://twitter.com/login?lang=tr" target="_blank">
+              <AiOutlineTwitter />
+            </Link>
+          </Flex>
+        </Flex>
+      </Flex>
+      <Challenges />
+      <Flex alignItems="center" justifyContent="center" flexDirection="column">
+        <Heading
+          fontWeight="semibold"
+          fontSize="18px"
+          borderBottom="3px solid red"
+          mb="40"
+          cursor="pointer"
+        >
+          View all challenges
+        </Heading>
+        <MainSearch />
       </Flex>
     </>
   );
