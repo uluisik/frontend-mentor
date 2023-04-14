@@ -1,4 +1,4 @@
-import { Flex, Spacer, Tab, TabList, Tabs, Text } from '@chakra-ui/react';
+import { Flex, Spacer, Tab, TabList, Tabs, Text, Link } from '@chakra-ui/react';
 import Aside from '../../components/Aside';
 import MainSearch from '../../components/Main/MainSearch';
 import ModalCard from '../../components/ModalCard';
@@ -229,16 +229,21 @@ function WallOfFame() {
         </Flex>
         <Spacer />
         <Flex alignItems="center" mr="12" fontWeight="semibold" fontSize="md">
-          <Text _hover={{ borderBottom: '3px solid red' }} cursor="pointer" mr="8">
-            Solutions
-          </Text>
-
-          <Text _hover={{ borderBottom: '3px solid red' }} cursor="pointer" mr="8">
-            Tags
-          </Text>
-          <Text _hover={{ borderBottom: '3px solid red' }} cursor="pointer">
-            Wall of Fame
-          </Text>
+          <Link href="solutions">
+            <Text _hover={{ borderBottom: '3px solid red' }} cursor="pointer" mr="8">
+              Solutions
+            </Text>
+          </Link>
+          <Link href="tags">
+            <Text _hover={{ borderBottom: '3px solid red' }} cursor="pointer" mr="8">
+              Tags
+            </Text>
+          </Link>
+          <Link href="wall-of-fame">
+            <Text _hover={{ borderBottom: '3px solid red' }} cursor="pointer">
+              Wall of Fame
+            </Text>
+          </Link>
         </Flex>
       </Flex>
       <Flex ml="20" gap="615px" mt="20">
