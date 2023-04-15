@@ -1,10 +1,11 @@
-import { Avatar, Box, Flex, Heading, Text } from '@chakra-ui/react';
+import { Avatar, Image, Flex, Heading, Text } from '@chakra-ui/react';
 import React from 'react';
+import { AiOutlineClose } from 'react-icons/ai';
 
 function Unlockpro() {
   return (
     <>
-      <Flex alignItems="center" justifyContent="center" mt="40">
+      <Flex flexDirection="column" alignItems="center" justifyContent="center" mt="40">
         <Flex alignItems="center" justifyContent="center" w="46%" flexDirection="column" mb="40">
           <Heading
             fontSize="3.2rem"
@@ -71,6 +72,39 @@ function Unlockpro() {
             </Heading>
             <Text>Web Developer & YouTuber</Text>
           </Flex>
+        </Flex>
+        <Flex position="relative" alignItems="center" justifyContent="center">
+          <Flex
+            bg="gray.100"
+            borderRadius="15"
+            h="500"
+            w="40%"
+            flexDirection="column"
+            border="1px solid red"
+            left="-20"
+          >
+            <Heading>Tutorials can only take you so far</Heading>
+            <Text>
+              Tutorials are an amazing way to learn the theory of web development. But there comes a
+              time when you need to take action and put that knowledge to the test.
+            </Text>
+            <Text>Have you ever felt like...</Text>
+            <Text>
+              <AiOutlineClose />
+              ...you’re caught in a never ending cycle of jumping from tutorial to tutorial without
+              internalizing what you’ve been taught?
+            </Text>
+            <Text>
+              <AiOutlineClose />
+              ...you only remember the surface-level concepts and forget all the good stuff?
+            </Text>
+            <Text>
+              <AiOutlineClose />
+              ...you rely on following code alongs to build projects and struggle when it comes to
+              doing it yourself?
+            </Text>
+          </Flex>
+          <Image h="600" w="40%" src="image/premiumm.webp" />
         </Flex>
       </Flex>
     </>
