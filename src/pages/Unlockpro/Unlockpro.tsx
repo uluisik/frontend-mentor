@@ -1,6 +1,6 @@
 import { Avatar, Image, Flex, Heading, Text } from '@chakra-ui/react';
 import React from 'react';
-import { AiOutlineClose } from 'react-icons/ai';
+import { AiOutlineCheck, AiOutlineClose } from 'react-icons/ai';
 
 function Unlockpro() {
   return (
@@ -73,38 +73,159 @@ function Unlockpro() {
             <Text>Web Developer & YouTuber</Text>
           </Flex>
         </Flex>
-        <Flex position="relative" alignItems="center" justifyContent="center">
+        <Flex mb="120px" alignItems="center" justifyContent="center">
           <Flex
             bg="gray.100"
             borderRadius="15"
             h="500"
-            w="40%"
+            w="36%"
             flexDirection="column"
             border="1px solid red"
-            left="-20"
+            pl="6"
           >
-            <Heading>Tutorials can only take you so far</Heading>
-            <Text>
+            <Heading fontWeight="normal" fontSize="3xl" my="6">
+              Tutorials can only take you so far
+            </Heading>
+            <Text mb="6" fontSize="18px">
               Tutorials are an amazing way to learn the theory of web development. But there comes a
               time when you need to take action and put that knowledge to the test.
             </Text>
-            <Text>Have you ever felt like...</Text>
-            <Text>
-              <AiOutlineClose />
-              ...you’re caught in a never ending cycle of jumping from tutorial to tutorial without
-              internalizing what you’ve been taught?
+            <Text mb="6" fontSize="18px">
+              Have you ever felt like...
             </Text>
-            <Text>
-              <AiOutlineClose />
-              ...you only remember the surface-level concepts and forget all the good stuff?
-            </Text>
-            <Text>
-              <AiOutlineClose />
-              ...you rely on following code alongs to build projects and struggle when it comes to
-              doing it yourself?
-            </Text>
+            <Flex mb="6">
+              <Text mt="1" fontWeight="bold" fontSize="xl">
+                <AiOutlineClose color="red" />
+              </Text>
+              <Text ml="2" fontSize="18px">
+                ...you’re caught in a never ending cycle of jumping from tutorial to tutorial
+                without internalizing what you’ve been taught?
+              </Text>
+            </Flex>
+            <Flex mb="6">
+              <Text mt="1" fontWeight="bold" fontSize="xl">
+                <AiOutlineClose color="red" />
+              </Text>
+              <Text ml="2" fontSize="18px">
+                ...you only remember the surface-level concepts and forget all the good stuff?
+              </Text>
+            </Flex>
+            <Flex>
+              <Text mt="1" fontWeight="bold" fontSize="xl">
+                <AiOutlineClose color="red" />
+              </Text>
+              <Text ml="2" fontSize="18px">
+                ...you rely on following code alongs to build projects and struggle when it comes to
+                doing it yourself?
+              </Text>
+            </Flex>
           </Flex>
           <Image h="600" w="40%" src="image/premiumm.webp" />
+        </Flex>
+        <Flex mb="220px" alignItems="center" justifyContent="center">
+          <Image h="600" w="40%" src="image/premiumm2.webp" />
+          <Flex
+            bg="rgb(62, 84, 163)"
+            borderRadius="15"
+            h="500"
+            w="36%"
+            flexDirection="column"
+            border="1px solid red"
+            pl="6"
+            color="white"
+          >
+            <Heading fontWeight="normal" fontSize="3xl" my="6">
+              Why not step into the shoes of a professional developer?
+            </Heading>
+            <Text mb="6" fontSize="18px">
+              There is no better way to practice front-end development than to use a realistic
+              workflow and build projects.
+            </Text>
+            <Text mb="6" fontSize="18px">
+              Our Pro subscription provides the highest quality resources so that you can...
+            </Text>
+            <Flex mb="6">
+              <Text mt="1" fontWeight="bold" fontSize="xl">
+                <AiOutlineCheck color="rgb(0, 219, 154)" />
+              </Text>
+              <Text ml="2" fontSize="18px">
+                ...learn to build fully-functional, multi-page websites with our premium challenges.
+              </Text>
+            </Flex>
+            <Flex mb="6">
+              <Text mt="1" fontWeight="bold" fontSize="xl">
+                <AiOutlineCheck color="rgb(0, 219, 154)" />
+              </Text>
+              <Text ml="2" fontSize="18px">
+                ...use the original design file to see the exact styles you need for all our
+                challenges.
+              </Text>
+            </Flex>
+            <Flex>
+              <Text mt="1" fontWeight="bold" fontSize="xl">
+                <AiOutlineCheck color="rgb(0, 219, 154)" />
+              </Text>
+              <Text ml="2" fontSize="18px">
+                ...build a portfolio of projects you’ll feel proud to share.
+              </Text>
+            </Flex>
+          </Flex>
+        </Flex>
+        <Text
+          w="44%"
+          fontSize="1.3rem"
+          fontStyle="italic"
+          fontFamily="Heebo, sans-serif"
+          mb="10"
+          textAlign="center"
+        >
+          "Frontend Mentor is a win-win. You can sharpen your skills building websites, and add
+          finished projects to your portfolio to help land a job!"
+        </Text>
+        <Flex mb="120px" flexDirection="column" ml="6" alignItems="center" justifyContent="center">
+          <Avatar size="xl" mb="4" name="Segun Adebayo" src="image/28.jpg" />
+          <Heading
+            fontWeight="700"
+            fontFamily="Heebo, sans-serif"
+            color="rgb(62, 84, 163)"
+            size="sm"
+          >
+            JESSICA CHAN
+          </Heading>
+          <Text>Web Developer & YouTuber</Text>
+        </Flex>
+        <Flex mb="120px" alignItems="center" justifyContent="center">
+          <Flex
+            justifyContent="center"
+            bg="gray.100"
+            h="650"
+            w="45%"
+            flexDirection="column"
+            border="1px solid red"
+          >
+            <Heading ml="70" fontWeight="normal" fontSize="3xl" my="6">
+              Why Frontend Mentor Pro?
+            </Heading>
+            <Text ml="70" mb="6" fontSize="18px">
+              There is no better way to practice front-end development than to build projects using
+              a realistic workflow.
+            </Text>
+            <Text ml="70" mb="6" fontSize="18px">
+              Our Pro subscription lets you do that with the highest quality projects and most
+              realistic workflow possible.
+            </Text>
+            <Text ml="70" mb="6" fontSize="18px">
+              Whether you’re looking for your first role or trying to get a promotion our Pro
+              subscription will give you the tools to grow your skillset.
+            </Text>
+            <Text ml="70" mb="6" fontSize="18px">
+              I hope you enjoy building our projects!
+            </Text>
+            <Text fontWeight="bold" ml="70" mb="6" fontSize="18px">
+              - Matt Studdert
+            </Text>
+          </Flex>
+          <Image h="650" w="45%" src="image/profile-matt.webp" />
         </Flex>
       </Flex>
     </>
