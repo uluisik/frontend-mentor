@@ -1,13 +1,4 @@
-import {
-  Avatar,
-  Image,
-  Flex,
-  Heading,
-  Text,
-  ListItem,
-  UnorderedList,
-  Divider
-} from '@chakra-ui/react';
+import { Avatar, Image, Flex, Heading, Text, ListItem, UnorderedList } from '@chakra-ui/react';
 import { AiOutlineCheck, AiOutlineClose } from 'react-icons/ai';
 import UnlockBestCard from './UnlockBestCard';
 
