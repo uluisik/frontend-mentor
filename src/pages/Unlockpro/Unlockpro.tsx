@@ -227,6 +227,93 @@ function Unlockpro() {
           </Flex>
           <Image h="650" w="45%" src="image/profile-matt.webp" />
         </Flex>
+        <Flex mb="40" w="60%" alignItems="center" flexDirection="column">
+          <Heading mb="8" fontSize="xl">
+            INSIDE OUR PREMIUM CHALLENGES
+          </Heading>
+          <Text fontSize="lg" textAlign="center">
+            All Pro members have access to our premium challenges. These are our highest quality
+            projects that provide the most realistic development experience possible. They also make
+            incredible portfolio pieces!
+          </Text>
+        </Flex>
+        <Flex mb="40" mx="32">
+          <Image w="50%" border="1px solid red" src="image/resimm.webp" />
+          <Flex
+            ml="20"
+            justifyContent="center"
+            alignItems="center"
+            w="45%"
+            border="1px solid blue"
+            flexDirection="column"
+          >
+            <Heading mb="10" fontWeight="semibold" fontSize="5xl">
+              Professional designs for multi-page websites
+            </Heading>
+            <Text fontSize="20">
+              Build fully-functional, multi-page websites and learn how to write scalable,
+              maintainable code. By the end of each challenge, you’ll have a beautiful new addition
+              to your web development portfolio.
+            </Text>
+          </Flex>
+        </Flex>
+        <Flex mb="40" mx="32">
+          <Flex
+            mr="20"
+            justifyContent="center"
+            alignItems="center"
+            w="50%"
+            border="1px solid blue"
+            flexDirection="column"
+          >
+            <Heading mb="10" fontWeight="semibold" fontSize="45">
+              Sketch and Figma designs included
+            </Heading>
+            <Text fontSize="20">
+              Use the original design files and work like a professional developer. See exactly what
+              styles need to be applied to get your solution close to the design.
+            </Text>
+          </Flex>
+          <Image w="50%" border="1px solid red" src="image/image-original-design.png" />
+        </Flex>
+        <Flex mb="40" mx="32">
+          <Image w="50%" border="1px solid red" src="image/image-multiple-devices.png" />
+          <Flex
+            ml="20"
+            justifyContent="center"
+            alignItems="center"
+            w="45%"
+            border="1px solid blue"
+            flexDirection="column"
+          >
+            <Heading mb="10" fontWeight="semibold" fontSize="5xl">
+              Mobile, tablet, and desktop layout designs
+            </Heading>
+            <Text fontSize="20">
+              Practice building fully-responsive websites by working to mobile, tablet, and desktop
+              designs. No need to guess how your project should look at different breakpoints.
+            </Text>
+          </Flex>
+        </Flex>
+        <Flex mb="40" mx="32">
+          <Flex
+            mr="20"
+            justifyContent="center"
+            alignItems="center"
+            w="50%"
+            border="1px solid blue"
+            flexDirection="column"
+          >
+            <Heading mb="10" fontWeight="semibold" fontSize="45">
+              Professional design system
+            </Heading>
+            <Text fontSize="20">
+              Our premium challenges come with a simple, professional design system to help you plan
+              out your styles. See common styles and patterns all in one neatly presented document.
+            </Text>
+          </Flex>
+          <Image w="50%" border="1px solid red" src="image/image-design-system.png" />
+        </Flex>
       </Flex>
     </>
   );
