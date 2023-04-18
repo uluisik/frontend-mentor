@@ -1,4 +1,4 @@
-import { Avatar, Image, Flex, Heading, Text } from '@chakra-ui/react';
+import { Avatar, Image, Flex, Heading, Text, ListItem, UnorderedList } from '@chakra-ui/react';
 import React from 'react';
 import { AiOutlineCheck, AiOutlineClose } from 'react-icons/ai';
 
@@ -313,6 +313,126 @@ function Unlockpro() {
             </Text>
           </Flex>
           <Image w="50%" border="1px solid red" src="image/image-design-system.png" />
+        </Flex>
+        <Text
+          w="44%"
+          fontSize="1.3rem"
+          fontStyle="italic"
+          fontFamily="Heebo, sans-serif"
+          mb="10"
+          textAlign="center"
+        >
+          "The projects are an amazing way to get started for growing devs and challenging enough
+          for mid-levels as well. Plus, I did manage to score an interview BECAUSE of those
+          projects!"
+        </Text>
+        <Flex mb="120px" flexDirection="column" ml="6" alignItems="center" justifyContent="center">
+          <Avatar size="xl" mb="4" name="Segun Adebayo" src="image/28.jpg" />
+          <Heading
+            fontWeight="700"
+            fontFamily="Heebo, sans-serif"
+            color="rgb(62, 84, 163)"
+            size="sm"
+          >
+            TIFFANY ARELLANO
+          </Heading>
+          <Text>Web Developer & YouTuber</Text>
+        </Flex>
+        <Flex mb="40" w="60%" alignItems="center" flexDirection="column">
+          <Heading mb="8" fontSize="xl">
+            BUT WAIT, THERE’S MORE!
+          </Heading>
+          <Text fontSize="lg" textAlign="center">
+            Cringey infomercial headline aside, we have a bunch of extra features beyond access to
+            our premium challenges to help you practice.
+          </Text>
+        </Flex>
+        <Flex mb="40" mx="16">
+          <Image w="50%" border="1px solid red" src="image/image-sketch-demo.gif" />
+          <Flex
+            ml="12"
+            w="50%"
+            border="1px solid blue"
+            flexDirection="column"
+            justifyContent="center"
+          >
+            <Heading color="blue.600" mb="2" fontWeight="bold" fontSize="xl">
+              DESIGN FILE ACCESS
+            </Heading>
+            <Text fontWeight="600" mb="6" fontSize="24">
+              See exactly what styles you need by using the original design file
+            </Text>
+            <Text mb="6" fontSize="18">
+              Professional developers use design files to help them see exactly what colors, fonts,
+              etc. a project requires.
+            </Text>
+            <UnorderedList ml="36px">
+              <ListItem fontSize="18">
+                <strong>Sketch and Figma designs</strong> - We provide both Sketch and Figma designs
+                for every challenge. So you can choose which tool you prefer to use.
+              </ListItem>
+              <ListItem fontSize="18">
+                <strong>Full access </strong> - Get access to the original design for both free and
+                premium challenges.
+              </ListItem>
+            </UnorderedList>
+          </Flex>
+        </Flex>
+        <Flex mb="40" mx="16">
+          <Flex
+            mr="20"
+            w="45%"
+            border="1px solid blue"
+            flexDirection="column"
+            justifyContent="center"
+          >
+            <Heading color="blue.600" mb="2" fontWeight="bold" fontSize="xl">
+              PRIVATE SOLUTIONS
+            </Heading>
+            <Text fontWeight="600" mb="6" fontSize="24">
+              Choose whether you keep your solutions public or make them private
+            </Text>
+            <Text mb="6" fontSize="18">
+              You get to decide exactly who sees your solutions. If you’d prefer to keep them
+              private, no problem!
+            </Text>
+            <UnorderedList ml="36px">
+              <ListItem fontSize="18">
+                <strong>Hidden throughout the site</strong> - Private solutions don’t show up around
+                the site until you make them public.
+              </ListItem>
+              <ListItem fontSize="18">
+                <strong>Choose who sees it </strong> - Nobody will be able to guess your solution
+                URL. But you can still share it with whoever you like.
+              </ListItem>
+            </UnorderedList>
+          </Flex>
+          <Image w="45%" border="1px solid red" src="image/image-private-demo.gif" />
+        </Flex>
+        <Flex mb="40" mx="16">
+          <Image w="45%" border="1px solid red" src="image/image-comparison-demo.gif" />
+          <Flex
+            ml="12"
+            w="48%"
+            border="1px solid blue"
+            flexDirection="column"
+            justifyContent="center"
+          >
+            <Heading mt="12" color="blue.600" mb="2" fontWeight="bold" fontSize="xl">
+              UNLIMITED SOLUTION SCREENSHOTS
+            </Heading>
+            <Text fontWeight="600" mb="6" fontSize="24">
+              Present your solution in the best light possible
+            </Text>
+            <Text mb="6" fontSize="18">
+              Whenever you submit your solution, we take a screenshot of your project. This lets you
+              compare how close you got to the design.
+            </Text>
+            <Text mb="6" fontSize="18">
+              With unlimited screenshots, you can take new screenshots whenever you update your
+              code. So you can be sure your solution is always showing off your latest edits.
+            </Text>
+          </Flex>
         </Flex>
       </Flex>
     </>
