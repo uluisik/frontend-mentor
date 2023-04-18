@@ -1,6 +1,15 @@
-import { Avatar, Image, Flex, Heading, Text, ListItem, UnorderedList } from '@chakra-ui/react';
-import React from 'react';
+import {
+  Avatar,
+  Image,
+  Flex,
+  Heading,
+  Text,
+  ListItem,
+  UnorderedList,
+  Divider
+} from '@chakra-ui/react';
 import { AiOutlineCheck, AiOutlineClose } from 'react-icons/ai';
+import UnlockBestCard from './UnlockBestCard';
 
 function Unlockpro() {
   return (
@@ -433,6 +442,41 @@ function Unlockpro() {
               code. So you can be sure your solution is always showing off your latest edits.
             </Text>
           </Flex>
+        </Flex>
+        <Flex
+          alignItems="center"
+          justifyContent="center"
+          w="75%"
+          flexDirection="column"
+          bg="rgb(62, 84, 163)"
+          borderRadius="20"
+          mb="40"
+        >
+          <Flex
+            alignItems="center"
+            justifyContent="center"
+            w="70px"
+            h="70px"
+            borderRadius="50%"
+            fontWeight="600"
+            fontSize="3xl"
+            mt="-9"
+            bg="rgb(48, 65, 126)"
+          >
+            TR
+          </Flex>
+          <Heading mb="6" mt="10" fontSize="18" color="white">
+            HEY! IT LOOKS LIKE YOU’RE BASED IN TÜRKIYE
+          </Heading>
+          <Text mb="10" fontWeight="semibold" fontSize="lg" color="white">
+            We support Purchasing Power Parity, so a 50% discount will be applied automatically at
+            checkout 🙂
+          </Text>
+        </Flex>
+        <Flex justifyContent="center" alignItems="center" gap="8">
+          <UnlockBestCard />
+          <UnlockBestCard />
+          <UnlockBestCard />
         </Flex>
       </Flex>
     </>
