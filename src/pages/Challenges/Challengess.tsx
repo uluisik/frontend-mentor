@@ -6,20 +6,39 @@ import {
   MenuItem,
   MenuList,
   Spacer,
-  MenuDivider,
-  Text
+  Text,
+  Checkbox
 } from '@chakra-ui/react';
 import Arrow from '../../icons/Arrow';
 import MainSearch from '../../components/Main/MainSearch';
 import Aside from '../../components/Aside';
 import ModalCard from '../../components/ModalCard';
 import Card from './Card';
+import { useState } from 'react';
 
 const SORT_BY = ['Most recent', 'Difficult (easier first)', ' Difficult (harder first)'];
 
-const FILTER_BY = ['Free', 'Free+', 'Premium'];
+const FILTER_ITEMS = [
+  {
+    title: 'TYPE',
+    filters: ['Free', 'Free+', 'Premium']
+  },
+  {
+    title: 'DIFFICULTY',
+    filters: ['Newbie', 'Junior', 'Intermediate', 'Advanced', 'Guru']
+  },
+  {
+    title: 'LANGUAGES',
+    filters: ['HTML & CSS', 'JS', 'API']
+  }
+];
 
 function Challengess() {
+  const [selectedFilters, setSelectedFilters] = useState<string[]>([]);
+  console.log('ahmet');
+  const filterHandler = (filter: string) => {
+    setSelectedFilters([...selectedFilters, filter]);
+  };
   return (
     <>
       <Flex h="60px" mb="6" border="1px solid" borderColor="gray.300" borderRightColor="white">
@@ -86,7 +105,7 @@ function Challengess() {
           alignItems="center"
           justifyContent="center"
         >
-          <Menu>
+          <Menu closeOnSelect={false}>
             <MenuButton
               colorScheme="gray.100"
               bg="none"
@@ -100,7 +119,19 @@ function Challengess() {
               FILTER BY
             </MenuButton>
             <MenuList minWidth="300px" overflowY="scroll">
-              <MenuItem
+              {FILTER_ITEMS.map((item) => (
+                <Flex key={item.title} flexDirection="column">
+                  <Text>{item.title}</Text>
+                  {item.filters.map((filter) => (
+                    <MenuItem key={filter} onClick={() => filterHandler(filter)}>
+                      <Checkbox>
+                        <Text>{filter}</Text>
+                      </Checkbox>
+                    </MenuItem>
+                  ))}
+                </Flex>
+              ))}
+              {/* <MenuItem
                 color="RGBA(0, 0, 0, 0.06)"
                 fontWeight="bold"
                 fontStyle="italic"
@@ -184,11 +215,15 @@ function Challengess() {
               <MenuItem px="3" _hover={{ bg: 'white' }} cursor="pointer" fontSize="19">
                 <Flex border="4px solid" borderColor="rgb(62, 84, 163)" w="28px" h="28px" mr="3" />
                 API
-              </MenuItem>
+              </MenuItem> */}
             </MenuList>
           </Menu>
         </Flex>
       </Flex>
+      {selectedFilters.map((selectedFilter) => (
+        <Text>{selectedFilter}</Text>
+      ))}
+
       <ModalCard />
       <Card />
       <Flex flexDirection="column" alignItems="center" justifyContent="center">

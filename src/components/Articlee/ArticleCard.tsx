@@ -1,4 +1,4 @@
-import { Flex, Heading, Text } from "@chakra-ui/react";
+import { Flex, Heading, Text } from '@chakra-ui/react';
 type ArticleProps = {
   title: string;
   link: string[];
@@ -11,12 +11,13 @@ function ArticleCard({ title, link }: ArticleProps) {
       </Heading>
       {link.map((item) => (
         <Text
-          _hover={{ borderBottom: "1px solid gray" }}
+          _hover={{ borderBottom: '1px solid gray' }}
           cursor="pointer"
           fontSize="18px"
           color="gray"
           mb="2"
           w="-webkit-max-content"
+          key={item}
         >
           {item}
         </Text>
